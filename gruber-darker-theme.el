@@ -40,28 +40,28 @@
 ;; Please, install rainbow-mode.
 ;; Colors with +x are lighter. Colors with -x are darker.
 (let ((gruber-darker-fg        "#e4e4ef")
-      (gruber-darker-fg+1      "#f4f4ff")
-      (gruber-darker-fg+2      "#f5f5f5")
-      (gruber-darker-white     "#ffffff")
-      (gruber-darker-black     "#000000")
-      (gruber-darker-bg-1      "#101010")
-      (gruber-darker-bg        "#181818")
-      (gruber-darker-bg+1      "#282828")
-      (gruber-darker-bg+2      "#453d41")
-      (gruber-darker-bg+3      "#484848")
-      (gruber-darker-bg+4      "#52494e")
-      (gruber-darker-red-1     "#c73c3f")
-      (gruber-darker-red       "#f43841")
-      (gruber-darker-red+1     "#ff4f58")
-      (gruber-darker-green     "#73c936")
-      (gruber-darker-yellow    "#ffdd33")
-      (gruber-darker-brown     "#cc8c3c")
-      (gruber-darker-quartz    "#95a99f")
-      (gruber-darker-niagara-2 "#303540")
-      (gruber-darker-niagara-1 "#565f73")
-      (gruber-darker-niagara   "#96a6c8")
-      (gruber-darker-wisteria  "#9e95c7")
-      )
+	  (gruber-darker-fg+1      "#f4f4ff")
+	  (gruber-darker-fg+2      "#f5f5f5")
+	  (gruber-darker-white     "#ffffff")
+	  (gruber-darker-black     "#000000")
+	  (gruber-darker-bg-1      "#101010")
+	  (gruber-darker-bg        "#181818")
+	  (gruber-darker-bg+1      "#282828")
+	  (gruber-darker-bg+2      "#453d41")
+	  (gruber-darker-bg+3      "#484848")
+	  (gruber-darker-bg+4      "#52494e")
+	  (gruber-darker-red-1     "#c73c3f")
+	  (gruber-darker-red       "#f43841")
+	  (gruber-darker-red+1     "#ff4f58")
+	  (gruber-darker-green     "#73c936")
+	  (gruber-darker-yellow    "#ffdd33")
+	  (gruber-darker-brown     "#cc8c3c")
+	  (gruber-darker-quartz    "#95a99f")
+	  (gruber-darker-niagara-2 "#303540")
+	  (gruber-darker-niagara-1 "#565f73")
+	  (gruber-darker-niagara   "#96a6c8")
+	  (gruber-darker-wisteria  "#9e95c7")
+	  )
   (custom-theme-set-variables
    'gruber-darker
    '(frame-brackground-mode (quote dark)))
@@ -74,7 +74,7 @@
    `(agda2-highlight-primitive-type-face ((t (:foreground ,gruber-darker-quartz))))
    `(agda2-highlight-function-face ((t (:foreground ,gruber-darker-niagara))))
    `(agda2-highlight-keyword-face ((t ,(list :foreground gruber-darker-yellow
-                                             :bold t))))
+											 :bold t))))
    `(agda2-highlight-inductive-constructor-face ((t (:foreground ,gruber-darker-green))))
    `(agda2-highlight-number-face ((t (:foreground ,gruber-darker-wisteria))))
 
@@ -83,19 +83,19 @@
    `(font-latex-italic-face ((t (:foreground ,gruber-darker-quartz :italic t))))
    `(font-latex-math-face ((t (:foreground ,gruber-darker-green))))
    `(font-latex-sectioning-5-face ((t ,(list :foreground gruber-darker-niagara
-                                             :bold t))))
+											 :bold t))))
    `(font-latex-slide-title-face ((t (:foreground ,gruber-darker-niagara))))
    `(font-latex-string-face ((t (:foreground ,gruber-darker-green))))
    `(font-latex-warning-face ((t (:foreground ,gruber-darker-red))))
 
    ;; Basic Coloring (or Uncategorized)
    `(border ((t ,(list :background gruber-darker-bg-1
-                       :foreground gruber-darker-bg+2))))
+					   :foreground gruber-darker-bg+2))))
    `(cursor ((t (:background ,gruber-darker-yellow))))
    `(default ((t ,(list :foreground gruber-darker-fg
-                        :background gruber-darker-bg))))
+						:background gruber-darker-bg))))
    `(fringe ((t ,(list :background gruber-darker-bg-1
-                       :foreground gruber-darker-bg+2))))
+					   :foreground gruber-darker-bg+2))))
    `(link ((t (:foreground ,gruber-darker-niagara :underline t))))
    `(link-visited ((t (:foreground ,gruber-darker-wisteria :underline t))))
    `(match ((t (:background ,gruber-darker-bg+4))))
@@ -103,42 +103,42 @@
    `(minibuffer-prompt ((t (:foreground ,gruber-darker-niagara))))
    `(region ((t (:background ,gruber-darker-bg+3 :foreground nil))))
    `(secondary-selection ((t ,(list :background gruber-darker-bg+3
-                                    :foreground nil))))
+									:foreground nil))))
    `(trailing-whitespace ((t ,(list :foreground gruber-darker-black
-                                    :background gruber-darker-red))))
+									:background gruber-darker-red))))
    `(tooltip ((t ,(list :background gruber-darker-bg+4
-                        :foreground gruber-darker-white))))
+						:foreground gruber-darker-white))))
 
    ;; Calendar
    `(holiday-face ((t (:foreground ,gruber-darker-red))))
 
    ;; Compilation
    `(compilation-info ((t ,(list :foreground gruber-darker-green
-                                 :inherit 'unspecified))))
+								 :inherit 'unspecified))))
    `(compilation-warning ((t ,(list :foreground gruber-darker-brown
-                                    :bold t
-                                    :inherit 'unspecified))))
+									:bold t
+									:inherit 'unspecified))))
    `(compilation-error ((t (:foreground ,gruber-darker-red+1))))
    `(compilation-mode-line-fail ((t ,(list :foreground gruber-darker-red
-                                           :weight 'bold
-                                           :inherit 'unspecified))))
+										   :weight 'bold
+										   :inherit 'unspecified))))
    `(compilation-mode-line-exit ((t ,(list :foreground gruber-darker-green
-                                           :weight 'bold
-                                           :inherit 'unspecified))))
+										   :weight 'bold
+										   :inherit 'unspecified))))
 
    ;; Custom
    `(custom-state ((t (:foreground ,gruber-darker-green))))
 
    ;; Diff
    `(diff-removed ((t ,(list :foreground gruber-darker-red+1
-                             :background nil))))
+							 :background nil))))
    `(diff-added ((t ,(list :foreground gruber-darker-green
-                           :background nil))))
+						   :background nil))))
 
    ;; Dired
    `(dired-directory ((t (:foreground ,gruber-darker-niagara :weight bold))))
    `(dired-ignored ((t ,(list :foreground gruber-darker-quartz
-                              :inherit 'unspecified))))
+							  :inherit 'unspecified))))
 
    ;; Ebrowse
    `(ebrowse-root-class ((t (:foreground ,gruber-darker-niagara :weight bold))))
@@ -188,55 +188,55 @@
 
    ;; Flymake
    `(flymake-errline
-     ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,gruber-darker-red)
-                   :foreground unspecified
-                   :background unspecified
-                   :inherit unspecified))
-      (t (:foreground ,gruber-darker-red :weight bold :underline t))))
+	 ((((supports :underline (:style wave)))
+	   (:underline (:style wave :color ,gruber-darker-red)
+				   :foreground unspecified
+				   :background unspecified
+				   :inherit unspecified))
+	  (t (:foreground ,gruber-darker-red :weight bold :underline t))))
    `(flymake-warnline
-     ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,gruber-darker-yellow)
-                   :foreground unspecified
-                   :background unspecified
-                   :inherit unspecified))
-      (t (:forground ,gruber-darker-yellow :weight bold :underline t))))
+	 ((((supports :underline (:style wave)))
+	   (:underline (:style wave :color ,gruber-darker-yellow)
+				   :foreground unspecified
+				   :background unspecified
+				   :inherit unspecified))
+	  (t (:forground ,gruber-darker-yellow :weight bold :underline t))))
    `(flymake-infoline
-     ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,gruber-darker-green)
-                   :foreground unspecified
-                   :background unspecified
-                   :inherit unspecified))
-      (t (:forground ,gruber-darker-green :weight bold :underline t))))
+	 ((((supports :underline (:style wave)))
+	   (:underline (:style wave :color ,gruber-darker-green)
+				   :foreground unspecified
+				   :background unspecified
+				   :inherit unspecified))
+	  (t (:forground ,gruber-darker-green :weight bold :underline t))))
 
    ;; Flyspell
    `(flyspell-incorrect
-     ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,gruber-darker-red) :inherit unspecified))
-      (t (:foreground ,gruber-darker-red :weight bold :underline t))))
+	 ((((supports :underline (:style wave)))
+	   (:underline (:style wave :color ,gruber-darker-red) :inherit unspecified))
+	  (t (:foreground ,gruber-darker-red :weight bold :underline t))))
    `(flyspell-duplicate
-     ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,gruber-darker-yellow) :inherit unspecified))
-      (t (:foreground ,gruber-darker-yellow :weight bold :underline t))))
+	 ((((supports :underline (:style wave)))
+	   (:underline (:style wave :color ,gruber-darker-yellow) :inherit unspecified))
+	  (t (:foreground ,gruber-darker-yellow :weight bold :underline t))))
 
    ;; Helm
    `(helm-candidate-number ((t ,(list :background gruber-darker-bg+2
-                                      :foreground gruber-darker-yellow
-                                      :bold t))))
+									  :foreground gruber-darker-yellow
+									  :bold t))))
    `(helm-ff-directory ((t ,(list :foreground gruber-darker-niagara
-                                  :background gruber-darker-bg
-                                  :bold t))))
+								  :background gruber-darker-bg
+								  :bold t))))
    `(helm-ff-executable ((t (:foreground ,gruber-darker-green))))
    `(helm-ff-file ((t (:foreground ,gruber-darker-fg :inherit unspecified))))
    `(helm-ff-invalid-symlink ((t ,(list :foreground gruber-darker-bg
-                                        :background gruber-darker-red))))
+										:background gruber-darker-red))))
    `(helm-ff-symlink ((t (:foreground ,gruber-darker-yellow :bold t))))
    `(helm-selection-line ((t (:background ,gruber-darker-bg+1))))
    `(helm-selection ((t (:background ,gruber-darker-bg+1 :underline nil))))
    `(helm-source-header ((t ,(list :foreground gruber-darker-yellow
-                                   :background gruber-darker-bg
-                                   :box (list :line-width -1
-                                              :style 'released-button)))))
+								   :background gruber-darker-bg
+								   :box (list :line-width -1
+											  :style 'released-button)))))
 
    ;; Ido
    `(ido-first-match ((t (:foreground ,gruber-darker-yellow :bold nil))))
@@ -249,7 +249,7 @@
 
    ;; Jabber
    `(jabber-chat-prompt-foreign ((t ,(list :foreground gruber-darker-quartz
-                                           :bold nil))))
+										   :bold nil))))
    `(jabber-chat-prompt-local ((t (:foreground ,gruber-darker-yellow))))
    `(jabber-chat-prompt-system ((t (:foreground ,gruber-darker-green))))
    `(jabber-rare-time-face ((t (:foreground ,gruber-darker-green))))
@@ -260,11 +260,11 @@
    ;; Line Highlighting
    `(highlight ((t (:background ,gruber-darker-bg+1 :foreground nil))))
    `(highlight-current-line-face ((t ,(list :background gruber-darker-bg+1
-                                            :foreground nil))))
+											:foreground nil))))
 
    ;; Linum
    `(linum ((t `(list :foreground gruber-darker-quartz
-                      :background gruber-darker-bg))))
+					  :background gruber-darker-bg))))
 
    ;; Magit
    `(magit-branch ((t (:foreground ,gruber-darker-niagara))))
@@ -273,29 +273,29 @@
    `(magit-log-sha1 ((t (:foreground ,gruber-darker-red+1))))
    `(magit-log-author ((t (:foreground ,gruber-darker-brown))))
    `(magit-log-head-label-remote ((t ,(list :foreground gruber-darker-green
-                                            :background gruber-darker-bg+1))))
+											:background gruber-darker-bg+1))))
    `(magit-log-head-label-local ((t ,(list :foreground gruber-darker-niagara
-                                           :background gruber-darker-bg+1))))
+										   :background gruber-darker-bg+1))))
    `(magit-log-head-label-tags ((t ,(list :foreground gruber-darker-yellow
-                                          :background gruber-darker-bg+1))))
+										  :background gruber-darker-bg+1))))
    `(magit-log-head-label-head ((t ,(list :foreground gruber-darker-fg
-                                          :background gruber-darker-bg+1))))
+										  :background gruber-darker-bg+1))))
    `(magit-item-highlight ((t (:background ,gruber-darker-bg+1))))
    `(magit-tag ((t ,(list :foreground gruber-darker-yellow
-                          :background gruber-darker-bg))))
+						  :background gruber-darker-bg))))
    `(magit-blame-heading ((t ,(list :background gruber-darker-bg+1
-                                    :foreground gruber-darker-fg))))
+									:foreground gruber-darker-fg))))
 
    ;; Message
    `(message-header-name ((t (:foreground ,gruber-darker-green))))
 
    ;; Mode Line
    `(mode-line ((t ,(list :background gruber-darker-bg+1
-                          :foreground gruber-darker-white))))
+						  :foreground gruber-darker-white))))
    `(mode-line-buffer-id ((t ,(list :background gruber-darker-bg+1
-                                    :foreground gruber-darker-white))))
+									:foreground gruber-darker-white))))
    `(mode-line-inactive ((t ,(list :background gruber-darker-bg+1
-                                   :foreground gruber-darker-quartz))))
+								   :foreground gruber-darker-quartz))))
 
    ;; Neo Dir
    `(neo-dir-link-face ((t (:foreground ,gruber-darker-niagara))))
@@ -310,12 +310,12 @@
 
    ;; Search
    `(isearch ((t ,(list :foreground gruber-darker-black
-                        :background gruber-darker-fg+2))))
+						:background gruber-darker-fg+2))))
    `(isearch-fail ((t ,(list :foreground gruber-darker-black
-                             :background gruber-darker-red))))
+							 :background gruber-darker-red))))
    `(isearch-lazy-highlight-face ((t ,(list
-                                       :foreground gruber-darker-fg+1
-                                       :background gruber-darker-niagara-1))))
+									   :foreground gruber-darker-fg+1
+									   :background gruber-darker-niagara-1))))
 
    ;; Sh
    `(sh-quoted-exec ((t (:foreground ,gruber-darker-red+1))))
@@ -332,7 +332,7 @@
 
    ;; Speedbar
    `(speedbar-directory-face ((t ,(list :foreground gruber-darker-niagara
-                                        :weight 'bold))))
+										:weight 'bold))))
    `(speedbar-file-face ((t (:foreground ,gruber-darker-fg))))
    `(speedbar-highlight-face ((t (:background ,gruber-darker-bg+1))))
    `(speedbar-selected-face ((t (:foreground ,gruber-darker-red))))
@@ -343,25 +343,25 @@
 
    ;; Whitespace
    `(whitespace-space ((t ,(list :background gruber-darker-bg
-                                 :foreground gruber-darker-bg+1))))
+								 :foreground gruber-darker-bg+1))))
    `(whitespace-tab ((t ,(list :background gruber-darker-bg
-                               :foreground gruber-darker-bg+1))))
+							   :foreground gruber-darker-bg+1))))
    `(whitespace-hspace ((t ,(list :background gruber-darker-bg
-                                  :foreground gruber-darker-bg+2))))
+								  :foreground gruber-darker-bg+2))))
    `(whitespace-line ((t ,(list :background gruber-darker-bg+2
-                                :foreground gruber-darker-red+1))))
+								:foreground gruber-darker-red+1))))
    `(whitespace-newline ((t ,(list :background gruber-darker-bg
-                                   :foreground gruber-darker-bg+2))))
+								   :foreground gruber-darker-bg+2))))
    `(whitespace-trailing ((t ,(list :background gruber-darker-red
-                                    :foreground gruber-darker-red))))
+									:foreground gruber-darker-red))))
    `(whitespace-empty ((t ,(list :background gruber-darker-yellow
-                                 :foreground gruber-darker-yellow))))
+								 :foreground gruber-darker-yellow))))
    `(whitespace-indentation ((t ,(list :background gruber-darker-yellow
-                                       :foreground gruber-darker-red))))
+									   :foreground gruber-darker-red))))
    `(whitespace-space-after-tab ((t ,(list :background gruber-darker-yellow
-                                           :foreground gruber-darker-yellow))))
+										   :foreground gruber-darker-yellow))))
    `(whitespace-space-before-tab ((t ,(list :background gruber-darker-brown
-                                            :foreground gruber-darker-brown))))
+											:foreground gruber-darker-brown))))
 
    ;;;;; company-mode
    `(company-tooltip ((t (:foreground ,gruber-darker-fg :background ,gruber-darker-bg+1))))
@@ -383,7 +383,7 @@
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
-               (file-name-as-directory (file-name-directory load-file-name))))
+			   (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'gruber-darker)
 
